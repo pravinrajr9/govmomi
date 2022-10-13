@@ -22607,7 +22607,7 @@ type HostDigestInfo struct {
 	DynamicData
 
 	DigestMethod string `xml:"digestMethod"`
-	DigestValue  []byte `xml:"digestValue"`
+	DigestValue  []int `xml:"digestValue"`
 	ObjectName   string `xml:"objectName,omitempty"`
 }
 
@@ -27129,7 +27129,7 @@ func init() {
 type HostTpmEventDetails struct {
 	DynamicData
 
-	DataHash       []byte `xml:"dataHash"`
+	DataHash       []int `xml:"dataHash"`
 	DataHashMethod string `xml:"dataHashMethod,omitempty"`
 }
 
